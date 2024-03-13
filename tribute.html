@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tribute.css">
+    <title>ARIJIT SINGH</title>
+</head>
+<body>
+    <div class="backbg"><div class="backbgop"></div></div>
+    <div class="intro">
+        <p class="age">25th APRIL 1987</p>
+        <h1>ARIJIT<br>SINGH</h1>
+        <p class="quote">“Success is not a destination, but a journey.”</p>
+    </div>
+    <div class="mainintro">
+        <div></div>
+        <p>Arijit Singh, a name synonymous with soulful melodies and heartfelt emotions, is a celebrated Indian playback singer and music composer. Born in 1987, he rose to fame through reality shows before captivating audiences with his debut song "Phir Mohabbat" in 2011.<br><br>
+
+            Renowned for his versatile vocals and ability to express diverse emotions, Singh has become a powerhouse in the Indian music industry. He has garnered numerous accolades, including a National Film Award and seven Filmfare Awards, solidifying his position as a leading artist.<br><br>
+            
+            Singing predominantly in Hindi and Bengali, with forays into other languages, Singh's discography boasts chart-topping hits like "Tum Hi Ho," "Agar Tum Saath Ho," and "Kesariya." He not only lends his voice to popular films but also curates soulful music through his independent label, Oriyon Music.<br><br>
+            
+            Whether serenading with romantic ballads or captivating with powerful emotions, Arijit Singh's music continues to touch millions of hearts worldwide.</p>
+    </div>
+    <div class="life">
+        <div class="events">
+            <br>
+            <h1 style="margin-bottom: 0;">MORE ABOUT ARIJIT SINGH</h1>
+            <hr>
+            <H2>Musical Roots : </H2>
+            <ul>
+                <li><B>Pre-2005:</B> Surrounded by music from a young age. Maternal aunt trained in classical music, grandmother sang, uncle played tabla, and mother sang and played tabla.</li>
+                <li><b>Early 2000s:</b> Starts formal music training, showcasing early talent and dedication.</li>
+            </ul>
+            <h2>Reality Show Launchpad:</h2>
+            <ul>
+                <li><b>2005:</b> Participates in "Fame Gurukul," gaining valuable exposure and experience.</li>
+                <li><b>2006-2009:</b> Performs in stage shows and builds connections within the industry.</li>
+            </ul>
+            <H2>Behind the Scenes an Breakthrough : </H2>
+            <ul>
+                <li><B>2009:</B> Joins music director Pritam's team as a programmer, absorbing production knowledge.</li>
+                <li><b>2011:</b> Debut song "Phir Mohabbat" released, garnering praise for its soulful rendition.</li>
+                <li><b>2013:</b> "Tum Hi Ho" becomes a massive hit, propelling him into the spotlight.</li>
+                <li><b>2013-2014:</b> Delivers back-to-back hits like "Kabhi Jo Badal Barse," "Sunidhi's Theme" and "Aashiqui 2" soundtrack, solidifying his place in the industry.</li>
+            </ul>
+            <h2>Rise to Stardom and Recognition:</h2>
+            <ul>
+                <li><b>2014-Present:</b> Collaborates with top music directors and composers, establishing versatility across genres.</li>
+                <li><b>2014:</b> Wins first Filmfare Award for "Aaj Raat Ka Sea."</li>
+                <li><b>2015-2016:</b> Continues chart-topping success with "Gerua," "Sanam Re," and "Sooraj Dooba Hai."</li>
+                <li><b>2017:</b> Garners national recognition with National Film Award for "Channa Mereya."</li>
+                <li><b>2018-Present:</b> Maintains dominance with hits like "Kesariya," "Dilbar," and "Agar Tum Saath Ho."</li>
+                <li><b>2021:</b> Faces personal loss with the passing of his mother.</li>
+                <li><b>2023:</b>> Launches independent music label "Oriyon Music," exploring personal music expression.</li>
+            </ul>
+            <h2>Beyond Music:</h2>
+            <ul>
+                <li><b>2014:</b> Marries Koel Roy, forming a supportive family unit.</li>
+                <li><b>2014-Present:</b> Becomes father to two children, balancing career and family life.</li>
+                <li><b>2019:</b> Makes acting debut in film "Guest in London."</li>
+                <li><b>2023:</b> Remains actively involved in social causes and supports aspiring artists.</li>
+            </ul>
+            <h2>Legacy and Impact:</h2>
+            <ul>
+                <li>Arijit Singh's soulful voice and versatile talent have redefined modern Indian music.</li>
+                <li>He has inspired countless singers and redefined the expectations of playback singers.</li>
+                <li>His dedication to music and passion for connecting with audiences through his craft solidify his legacy as a musical icon.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="stage">
+        <div><img src="ajs1.jpg" alt="ARIJIT SINGH"></div>
+        <div><img src="ajs6.jpg" alt="ARIJIT SINGH"></div>
+        <div><img src="ajs4.jpg" alt="ARIJIT SINGH"></div>
+        <div><img src="ajs2.jpg" alt="ARIJIT SINGH"></div>
+    </div>
+    <div id="bottom" class="bottom" data-music-url="Woh Din Chhichhore.mp3">
+        <p>"Na kisi manzil ki fikar thi<br> Zindagi jeene ki umar thi<br> Dosti aur doston se udhar ke din the<br> Woh din bhi kya din the."</p>
+    </div>
+    <script>
+        const musicDivs = document.querySelectorAll('#bottom');
+        musicDivs.forEach(musicDiv => {
+            const audioElement = new Audio();
+            const musicUrl = musicDiv.getAttribute('data-music-url');
+            audioElement.src = musicUrl;
+            audioElement.load();
+            musicDiv.addEventListener('mouseover', () => {
+                audioElement.play();
+            });
+
+            musicDiv.addEventListener('mouseout', () => {
+                audioElement.pause();
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+BODY{
+    background-color: rgb(70, 70, 70);
+    margin: 0;
+    width: 100%;
+}
+
+.backbg{
+    position: absolute;
+    background-image: url("aj1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 72vw;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.backbgop{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(70,70,70, 1) 100%);
+}
+
+.intro{
+    position: static;
+}
+
+.intro h1{
+    margin-left: 2.3vw;
+    margin-bottom: 0;
+    font-size: 8vw;
+    color: rgba(1, 255, 255, 0.6);
+    font-family:'Courier New', Courier, monospace;
+}
+
+.intro .quote{
+    margin-left: 2.3vw;
+    margin-top: 0;
+    color: rgb(251, 255, 0);
+    font-size: 1.55vw;
+}
+
+.age{
+    color: white;
+    font-size: 20px;
+    float: right;
+    margin-right: 2vw;
+    margin-top: -3vh;
+}
+
+.mainintro{
+    width: 100%;
+    margin-top: 25vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.mainintro div{
+    border-radius: 40px;
+    animation: background-def 2s ease-in-out;
+    background-image: url("aj2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40%;
+    height: 42vw;
+    border-top: 2px solid rgb(141, 141, 141);
+    border-left: 2px solid rgb(141, 141, 141);
+}
+
+@keyframes background-change {
+    from{
+        background-image: url("aj2.jpg");
+    }
+    to{
+        background-image: url("ajs3.jpg");
+    }
+}
+
+@keyframes background-def {
+    from{
+        background-image: url("ajs3.jpg");
+    }
+    to{
+        background-image: url("aj2.jpg");
+    }
+}
+
+.mainintro div:hover {
+    animation: background-change 2s ease-in-out;
+    animation-fill-mode: both;
+}
+
+.mainintro p{
+    width: 40%;
+    margin-right: 3vw;
+    color: white;
+    text-align: justify;
+    font-size: 1.5vw;
+}
+
+.life{
+    margin: 0;
+    font-size: 1.3vw;
+}
+
+.events{
+    position: static;
+    margin-left: 2vw;
+    background-color: rgba(91, 92, 92, 0.26);
+    transition: box-shadow 2s ease-in-out;
+    box-shadow: 0 0 50px 15px #327da5;
+    border-radius: 30px;
+    margin-right: 2vw;
+    padding: 3vw;
+    padding-top: 0;
+    color: white;
+    margin: 2vw;
+}
+
+.events:hover {
+    transition: box-shadow 2s ease-in-out;
+    box-shadow: 0 0 50px 15px #6dc2f0;
+}
+
+.stage{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-between;
+    margin-left: 6.5vw;
+}
+
+.stage img{
+    width: 80%;
+    border-radius: 30px;
+    box-shadow: 0 0 50px 10px #828283;
+    margin-top: max(2vw,3vh);
+}
+
+.bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4vw;
+    background-color: rgba(0, 0, 0, 0.555);
+    color: white;
+    font-size: 2vw;
+}
+
+@media only screen and (max-device-width: 480px) {
+    .quote{
+        font-size: 1.55vw;
+    }
+    body{
+        margin: 0;
+    }
+    .age{
+        margin: 0 13px 0 0;
+        font-size: 2.3vw;
+    }
+    .mainintro p{
+        font-size: 1.8vw;
+    }
+    .events{
+        font-size: 2.2vw;
+    }
+    .bottom{
+        margin: 1vw;
+    }
+}
